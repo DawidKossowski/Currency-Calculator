@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Kalkulator walutowy</title>
+    <link rel="stylesheet" href="src/styles/style.css">
+</head>
+<body>
+
+<div class='wrapper'>
+    <div class="content">
+        <h1> Kalkulator walutowy </h1>
+        <select class="u-block u-spacing-bottom" id='from'>
+            <option value="" disabled selected hidden>Wybierz z jakiej waluty przeliczac</option>
+        </select>
+
+        <select class="u-block u-spacing-bottom" id='to'>
+            <option value="" disabled selected hidden>Wybierz na jaka walute przeliczyc</option>
+        </select>
+
+        <div class="u-spacing-bottom">
+            <label for="amount">Kwota: </label>
+            <input type="text" id="amount" value="1" />
+        </div>
+
+        <div class="u-spacing-bottom">
+            <label for="result">Wynik: </label>
+            <input type="text" id="result" class="resultField" disabled />
+        </div>
+    </div>
+
+    <div class="courses u-spacing-top">
+        <button id="showTable"> Wyświetl wszystkie kursy </button>
+
+        <table id="courses" class="moneyTable">
+            <tr>
+                <th>Currency</th>
+                <th>Code</th>
+                <th>Mid</th>
+            </tr>
+        </table>
+    </div>
+</div>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="src/scripts/main.js"></script>
+
+</body>
+</html>
